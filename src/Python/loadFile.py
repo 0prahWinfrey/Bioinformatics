@@ -18,7 +18,9 @@ class loadFile:
             else:
                 print("ERROR square mat not yet implemented")
                 
-        ret = np.zeros((len(cont), 3))
+        
+        retWithDiag = np.zeros((len(cont), 3))
+        
         #TO DO sort
         n= len(cont)
         print("Number of points : ", n)
@@ -26,8 +28,21 @@ class loadFile:
         stepsize =float(cont[1][1])
         for i in range(len(cont)):
             for j in range(2):
-                ret[i][j] = float(cont[i][j])/stepsize
-            ret[i][2] = float(cont[i][2])
+                retWithDiag[i][j] = float(cont[i][j])/stepsize
+            retWithDiag[i][2] = float(cont[i][2])
+        
+        numBins = max(max(retWithDiag[:,0]),max(retWithDiag[:,1]))
+        
+        print("numBins ",numBins)
+        ret = np.zeros((int(len(cont)-numBins+1), 3))
 
+        nextIn = 0
+        for i in range(len(cont)):
+            if retWithDiag[i][0] != retWithDiag[i][1]:
+                ret[nextIn][:] = retWithDiag[i][:]
+                nextIn += 1
+                
+        ret = ret[ret[:,0].argsort()]
+        
         return ret
   
