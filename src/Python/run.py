@@ -305,7 +305,7 @@ for CONVERT_FACTOR in CONVERT_FACTOR_R :
     # Perform optimization
     structure = variables #this is xyz
     
-    cost, bestPXYZ = optimizer.optimize(opt_func, iters=10, n_processes=10)   
+    cost, bestPXYZ = optimizer.optimize(opt_func, iters=10000, n_processes=10)   
     for i in range(len(variables)):
         variables[i][0]=bestPXYZ[i]
         variables[i][1]=bestPXYZ[i+len(variables)]
