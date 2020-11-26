@@ -1,3 +1,3 @@
-# Bioinformatics
+# Lord of the flies
 
-This will holy my bioinf code fo ranalyizing Hi-C next generation data
+This code is run by using  python3 run.py <input_data> 
