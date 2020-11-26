@@ -2,6 +2,8 @@ import numpy as np
 from scipy.integrate import odeint
 from scipy.optimize import brentq
 
+logistic = lambda x : 4*x*(1-x)
+
 class ChaosGenerator () :
     """
     Base class for the chaotic generator
@@ -51,7 +53,6 @@ class ChaosGenerator () :
             for i in range(gens)
         ])
 
-
     def getCgens (self) :
         """ Returns a copy of the internal generators """
         return np.copy (self.cgens)
@@ -80,19 +81,20 @@ class ChaosGenerator () :
                 self.chaosPoints(i+1) for i in range(self.gens)
             ])
 
+
 class Logistic (ChaosGenerator) :
     """
     Logistic map --> f(x) = r*x*(1-x)
     r = 4 for full chaos
     """
 
-    def __init__ (self, oshape, cascade=True, r=4, gens=2) :
+    def __init__ (self, oshape, r=4, cascade=True, gens=2) :
         """
         r - logistic bifurcation parameter
         Rest is defined in the parent class
         """
 
-        ChaosGenerator.__init__(self, oshape, None, cascade, gens)
+        super().__init__(oshape, None, cascade, gens)
         self.r = r
 
     def evolve (self, gind) :
@@ -104,6 +106,7 @@ class Logistic (ChaosGenerator) :
 
         self.cgens[gind] = r*x*(1-x)
         return ret
+
 
 class InverseLE (ChaosGenerator) :
     """
@@ -143,10 +146,13 @@ class InverseLE (ChaosGenerator) :
             1 if np.random.rand() >= 0.5 else 0
         ]))
 
-    def __init__ (self, oshape, cascade=True, le=1.28991999999, gens=2) :
-        """ le      - The lyapunov exponent whose map has to be found """
+    def __init__ (self, oshape, le=1.28991999999, cascade=True, gens=2) :
+        """
+			le      - The lyapunov exponent whose map has to be found
+			Rest is defined in the base class
+		"""
 
-        ChaosGenerator.__init__(self, oshape, None, cascade, gens)
+        super().__init__(oshape, None, cascade, gens)
         self.le = le
 
         if le == np.log(2) :
@@ -165,15 +171,16 @@ class InverseLE (ChaosGenerator) :
         self.cgens[gind] = self.invmap(x)
         return ret
 
+
 class Tent (ChaosGenerator) :
     """Tent map --> f(x) = 2*x , x <= 0.5 ; 2*(1-x) , x > 0.5
     mu = 0.49999 in the equivalent form for numerical stability"""
 
-    def __init__ (self, oshape, cascade=True, mu=0.49999, gens=2) :
+    def __init__ (self, oshape, mu=0.49999, cascade=True, gens=2) :
         """mu - Tent bifurcation paramater
         Rest is defined in the parent class"""
 
-        ChaosGenerator.__init__(self, oshape, None, cascade, gens)
+        super().__init__(oshape, None, cascade, gens)
         self.mu = mu
 
     def evolve (self, gind) :
@@ -185,6 +192,7 @@ class Tent (ChaosGenerator) :
 
         self.cgens[gind] = np.where(x <= mu, x/mu, (1-x)/(1-mu))
         return ret
+
 
 class Lorenz (ChaosGenerator) :
     """
@@ -217,9 +225,7 @@ class Lorenz (ChaosGenerator) :
             ]))\
             (odeint (Lorenz.lorenz, np.random.rand(3), np.linspace (0, 9999, 999999), args = params))
 
-
-
-    def __init__ (self, oshape, cascade=True, params=(10, 8.0/3, 28), comp=0, h=0.01, gens=2) :
+    def __init__ (self, oshape, params=(10, 8.0/3, 28), cascade=True, comp=0, h=0.01, gens=2) :
         """"
         params  - (sigma, beta, rho) of lorenz parameters
         comp    - which cdim to consider for chaotic numbers
@@ -227,7 +233,7 @@ class Lorenz (ChaosGenerator) :
         Rest is defined in the parent class
         """
 
-        ChaosGenerator.__init__ (self, oshape, oshape+(3,), cascade, gens)
+        super().__init__ (oshape, oshape+(3,), cascade, gens)
         self.params = params
         self.comp = comp
         self.h = h
@@ -236,7 +242,7 @@ class Lorenz (ChaosGenerator) :
         Lorenz.setLimits (params)
 
         ######################################################################
-        # !!!!! IDEA FOR OOP !!!!!!!
+        # !!! IDEA FOR OOP
         # Introduce two subclasses - Normalised, and unnormalised
         # The unnormalised class will have normalisation functions like the one
         # below (Also seen in Henon map)
@@ -286,7 +292,8 @@ class Lorenz (ChaosGenerator) :
         self.evolveT (gind)
         return ret
 
-class Henon(ChaosGenerator) :
+
+class Henon (ChaosGenerator) :
     """
     Henon map (Simplified model of the poincare section of Lorenz model)
     (x,y) -> (1-ax^2+y, bx)
@@ -317,13 +324,13 @@ class Henon(ChaosGenerator) :
             ])
 
 
-    def __init__ (self, oshape, cascade=True, params=(1.4, 0.3), comp=0, gens=2) :
+    def __init__ (self, oshape, params=(1.4, 0.3), cascade=True, comp=0, gens=2) :
         """
         Constructor for the Henon chaotic map object
         params          - (a, b) parameters of the Henon map
         """
 
-        ChaosGenerator.__init__ (self, oshape, oshape+(2,), cascade, gens)
+        super().__init__ (oshape, oshape+(2,), cascade, gens)
         self.params = params
         self.comp = comp
 
@@ -360,15 +367,16 @@ class Henon(ChaosGenerator) :
 
         return ret
 
+
 class Baker (ChaosGenerator) :
     """
     Baker map -->   (2x, y/2) if 0 <= x < 1/2
                     (2-2x, 1-y/2) 1/2 <= x < 1
     """
 
-    def __init__ (self, oshape, cascade=True, mu=0.49999, comp=0, gens=2) :
+    def __init__ (self, oshape, mu=0.49999, cascade=True, comp=0, gens=2) :
 
-        ChaosGenerator.__init__ (self, oshape, oshape+(2,), cascade, gens)
+        super().__init__ (oshape, oshape+(2,), cascade, gens)
         self.mu = mu
         self.comp = comp
 
@@ -387,12 +395,78 @@ class Baker (ChaosGenerator) :
 
         return ret
 
+
+class Beach () :
+	"""
+	  Implements the BEACH pseudo-randon number generator
+	  Name		- B-Exponential All-Chaotic Map Hopping
+	  Author		- Mahesh C Sastry et. al.
+	  Link		- https://arxiv.org/abs/cs/0607069
+	"""
+
+	# Limit below which B-exponential map is not surjective
+	robust_lim = np.exp(-4)
+
+	def __seedb__ (self) :
+		"""
+		Seeds the initial b parameter
+		of BEACH until it is legal
+		"""
+		self.x = np.random.rand()
+		r = np.random.rand()
+		b = Beach.robust_lim + r*(self.blim - Beach.robust_lim)
+		while r == 0.75 :
+			r = np.random.rand()
+			b = Beach.robust_lim + r*(self.blim - Beach.robust_lim)
+
+		self.r = r
+		self.b = b
+
+	def __init__ (self, oshape, R=20, blim=1e4) :
+		""" Beach constructor """
+
+		self.oshape = oshape
+		self.R = R
+		self.blim = blim
+		self.blim_inv = 1/blim
+		self.__seedb__()
+
+	def bmap (self, x, b) :
+		if np.abs(b - 1) < 1e-4 :
+			return 4*x*(1-x)
+		else :
+			return (b - x*np.power(b,x) - (1-x)*np.power(b, 1-x))/(b - np.sqrt(b))
+
+	def getrand (self) :
+		""" Returns a random number according to the BEACH PSRN algorithm """
+
+		ret = self.x
+		for _ in range(self.R) :
+			self.x = self.bmap(self.x, self.b)
+
+		self.r = logistic(self.r)
+		if self.r <= self.blim_inv :
+			self.r = self.x if self.x >= self.blim_inv else self.blim_inv
+
+		self.b = Beach.robust_lim + self.r*(self.blim - Beach.robust_lim)
+		return ret
+
+	def chaosPoints (self, _) :
+		""" Generates PSRNs with a given shape """
+
+		Np, D = self.oshape
+		return np.array([
+			self.getrand() for _ in range(Np*D)
+		]).reshape(self.oshape)
+
+
 # Used by CPSO for generating swarms
-ChaosGenerator.cgen = {
+cgen = {
 "log"       : Logistic,
 "lorenz"    : Lorenz,
 "tent"      : Tent,
 "henon"     : Henon,
 "baker"     : Baker,
-"inverse"   : InverseLE
+"inverse"   : InverseLE,
+"beach"		: Beach
 }
