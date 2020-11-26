@@ -371,6 +371,28 @@ for CONVERT_FACTOR in CONVERT_FACTOR_R :
         bestPearsonRHO = pearsonCoeff.iloc[0]['wishDist']
         bestMat =  variables
         bestAlpha = CONVERT_FACTOR
+#========================================================================
+# create pdb
+#------------------------------------------------------------------------
+#Increase structure Size
+
+xyz4pdb = myUtils.convert2xyz(myUtils(), n, bestMat) 
+scale=100/np.amax(xyz4pdb)
+xyz4pdb = xyz4pdb* scale
+#output pdb file
+outputData= np.round_(xyz4pdb ,3 )
+
+outputFile = 'yolo.pdb' #output directory.
+
+
+if os.path.exists(outputFile):
+    os.remove(outputFile)
+
+output = outputObj(outputData,outputFile)
+
+pdbMaker = makePDB()
+makePDB.mat2pdb(pdbMaker, output) # Converts the mat XYZ coordinates to PDB format.
+
 print("Input file: ", inFile)
 print("Convert factor:: ",bestAlpha)
 print("AVG RMSE  : ", rmse)    
