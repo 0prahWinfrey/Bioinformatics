@@ -1,3 +1,6 @@
+#!/usr/bin/python
+
+import sys
 #util
 import os
 import time
@@ -36,8 +39,8 @@ from multiprocessing import Pool
 #==========================================================================
 # Make directory if it doesn't exist
 #--------------------------------------------------------------------------
-if not os.path.exists('my_folder'):
-    os.makedirs('my_folder')
+#if not os.path.exists('my_folder'):
+#    os.makedirs('my_folder')
 
 ## constants
 #inFile = "../../examples/GSDB/inputs/KR_1mb/chr20_matrix.txt"
@@ -45,6 +48,8 @@ if not os.path.exists('my_folder'):
 #inFile = "../../../../examples/input/chr19.txt"# Works
 #inFile = "../../../../examples/GSDB/inputs/KR_1mb/chr20_list.txt"
 inFile = "../../examples/simulatedDataSet/Simulation/data/regular/regular90.txt"
+print ('First argument:',  str(sys.argv[1]))
+inFile = str(sys.argv[1])
 
 ## load file 
 lstCons=loadFile.loadFileFunc(loadFile(), inFile)
@@ -300,20 +305,20 @@ for CONVERT_FACTOR in CONVERT_FACTOR_R :
     # Perform optimization
     structure = variables #this is xyz
     
-    cost, bestPXYZ = optimizer.optimize(opt_func, iters=250, n_processes=5)   
+    cost, bestPXYZ = optimizer.optimize(opt_func, iters=10, n_processes=10)   
     for i in range(len(variables)):
         variables[i][0]=bestPXYZ[i]
         variables[i][1]=bestPXYZ[i+len(variables)]
         variables[i][2]=bestPXYZ[i+len(variables)*2]
-    for i in range(10):
-        optimizer = ps.single.GlobalBestPSO(n_particles=swarm_size,
-                                        dimensions=dim,
-                                        options=options )
-        cost, bestPXYZ = optimizer.optimize(opt_func_alt, iters=100, n_processes=5)   
-        for i in range(len(variables)):
-            variables[i][0]+=bestPXYZ[i]
-            variables[i][1]+=bestPXYZ[i+len(variables)]
-            variables[i][2]+=bestPXYZ[i+len(variables)*2]
+    #for i in range(10):
+     #   optimizer = ps.single.GlobalBestPSO(n_particles=swarm_size,
+      #                                  dimensions=dim,
+       #                                 options=options )
+        #cost, bestPXYZ = optimizer.optimize(opt_func_alt, iters=10, n_processes=10)   
+        #for i in range(len(variables)):
+        #    variables[i][0]+=bestPXYZ[i]
+        #    variables[i][1]+=bestPXYZ[i+len(variables)]
+        #    variables[i][2]+=bestPXYZ[i+len(variables)*2]
     
     #print(variables)
     getSpear()
@@ -366,8 +371,17 @@ for CONVERT_FACTOR in CONVERT_FACTOR_R :
         bestPearsonRHO = pearsonCoeff.iloc[0]['wishDist']
         bestMat =  variables
         bestAlpha = CONVERT_FACTOR
+print("Input file: ", inFile)
+print("Convert factor:: ",bestAlpha)
+print("AVG RMSE  : ", rmse)    
+print("AVG Spearman correlation Dist vs. Reconstructed Dist  : ", bestSpearmanRHO) 
+print("AVG Pearson correlation Dist vs. Reconstructed Dist  : ", bestPearsonRHO) 
 
-print("RMSE  : ", rmse)    
-print("bestPearsonRHO  : ", bestPearsonRHO) 
-print("bestSpearmanRHO  : ", bestSpearmanRHO) 
-print("Best Alpha : ",bestAlpha)
+
+FILE = open("this.log", 'w');
+inString = ("Input file: " + str(inFile) + "\n"+"Convert factor:: " + str(bestAlpha)+ "\n" +
+    "AVG RMSE  : "+ str(rmse)+ "\n"+"AVG Spearman correlation Dist vs. Reconstructed Dist  : "+ str(bestSpearmanRHO)+ "\n"
+    +"AVG Pearson correlation Dist vs. Reconstructed Dist  : "+ str(bestPearsonRHO)) + "\n"
+    
+FILE.write(inString);
+FILE.close();
