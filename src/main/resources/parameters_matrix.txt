@@ -1,10 +1,11 @@
 #number of structures will be generated
 NUM = 1
 
-OUTPUT_FOLDER = output/Matrix
+# . means here
+OUTPUT_FOLDER = .
 
 #comma seperated square matrix
-INPUT_FILE = input/Matrix/chr21.txt
+INPUT_FILE = ../src/examples/input/chr19.txt
 
 
 #factor used to convert IF into distance = 1 / (IF^factor)
