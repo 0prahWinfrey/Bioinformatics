@@ -43,11 +43,6 @@ from multiprocessing import Pool
 #    os.makedirs('my_folder')
 
 ## constants
-#inFile = "../../examples/GSDB/inputs/KR_1mb/chr20_matrix.txt"
-#inFile = "../../examples/GSDB/inputs/KR_1mb/chr22_list.txt" #Works
-#inFile = "../../../../examples/input/chr19.txt"# Works
-#inFile = "../../../../examples/GSDB/inputs/KR_1mb/chr20_list.txt"
-inFile = "../../examples/simulatedDataSet/Simulation/data/regular/regular90.txt"
 print ('First argument:',  str(sys.argv[1]))
 inFile = str(sys.argv[1])
 
@@ -59,6 +54,25 @@ lstCons[:,1] = lstCons[:,1].astype('int')
 
 dataset=lstCons[:,2]
 lstCons[:,2] = (dataset - np.min(dataset)) / (np.max(dataset) - np.min(dataset))+0.0001
+
+### config
+import yaml
+config = yaml.safe_load(open("settings.yml"))
+swarm_size = config['swarm'][0]['swarm_size']
+
+al = config['dist_conv'][0]['alpha_low']
+ah = config['dist_conv'][0]['alpha_high']
+aStepSize = config['dist_conv'][0]['alpha_step_size']
+CONVERT_FACTOR_R = np.arange(al, ah, aStepSize) # this is alpha and can be looped
+
+c1 = config['swarm'][0]['c1']
+c2 = config['swarm'][0]['c2']
+w = config['swarm'][0]['w']
+options = {'c1': c1, 'c2': c2, 'w': w}
+
+MAX_ITERATION = config['swarm'][0]['max_iterations']; # maximum number of iterations
+
+
 
 
 class outputObj:
@@ -194,9 +208,7 @@ def opt_func_alt(X):
     
     return allDists
 ## this is convert to distance
-CONVERT_FACTOR_R = np.arange(0.1, 2, .2) # this is alpha and can be looped
-#CONVERT_FACTOR_R=[0.7]
-MAX_ITERATION = 500; # maximum number of iterations
+
 
 AVG_DIST = 10.0  # an arbitrary distance
 
@@ -283,13 +295,8 @@ for CONVERT_FACTOR in CONVERT_FACTOR_R :
     variables = np.array(variables)
 
     dist = 1/(IF**CONVERT_FACTOR)
-
-    swarm_size = 120
     dim = n*3       # Dimension of X
     epsilon = 1
-    options = {'c1': 0.5, 'c2':0.3, 'w':0.9}
-
-    
     
     #options = {'c1': 0.5, 'c2':0.3, 'w':0.9, 'k': 3, 'p': 2}#Local Best
     options = {'c1': 0.2, 'c2':0.5, 'w':0.9}
@@ -305,7 +312,7 @@ for CONVERT_FACTOR in CONVERT_FACTOR_R :
     # Perform optimization
     structure = variables #this is xyz
     
-    cost, bestPXYZ = optimizer.optimize(opt_func, iters=10000, n_processes=10)   
+    cost, bestPXYZ = optimizer.optimize(opt_func, iters=MAX_ITERATION, n_processes=10)   
     for i in range(len(variables)):
         variables[i][0]=bestPXYZ[i]
         variables[i][1]=bestPXYZ[i+len(variables)]
