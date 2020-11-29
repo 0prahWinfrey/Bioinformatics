@@ -13,8 +13,6 @@ import java.util.regex.Pattern;
 
 
 
-import org.apache.commons.math3.stat.descriptive.SummaryStatistics;
-
 import com.bioinf.lordoftheflies.evaluation.CalRMSD;
 import com.bioinf.lordoftheflies.optimization.GradientAscent;
 import com.bioinf.lordoftheflies.optimization.OptimizedObject;
