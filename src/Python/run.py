@@ -74,7 +74,6 @@ MAX_ITERATION = config['swarm'][0]['max_iterations']; # maximum number of iterat
 
 
 
-
 class outputObj:
     def __init__(self, xyzData, outputFile):
         self.xyzData = xyzData
@@ -299,7 +298,6 @@ for CONVERT_FACTOR in CONVERT_FACTOR_R :
     epsilon = 1
     
     #options = {'c1': 0.5, 'c2':0.3, 'w':0.9, 'k': 3, 'p': 2}#Local Best
-    options = {'c1': 0.2, 'c2':0.5, 'w':0.9}
     
     max_bound = maxD/2 * np.ones(dim)
     min_bound = - max_bound
