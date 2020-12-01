@@ -2,15 +2,15 @@
 #comment out this parameter will make the program to scan for the best factor in [0.1, 2.0]
 dist_conv:
     - alpha_low: 0.5
-      alpha_high: 0.8
+      alpha_high: 0.7
       alpha_step_size: 0.2
 
 #learning rate for the optimization process
 #if the program fails to generate structures, try to reduce this learning rate
 swarm:
     - swarm_size: 15
-      c1: 0.2
-      c2: 0.5
+      c1: 0.9
+      c2: 0.9
       w: 0.9
       max_iterations: 500
 

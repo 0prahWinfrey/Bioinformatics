@@ -13,6 +13,8 @@ You can install the dependencies yourself using either pip/conda or you can run 
 ## Building java WORK IN PROGRESS 
 Requires : maven java
 
+mvn install:install-file -Dfile=resources/jswarm-pso_2_08.jar -DgroupId=net.sourceforge -DartifactId=jswarm_pso -Dversion=1.0 -Dpackaging=jar
+
 mvn clean install
 
 Jar is in target

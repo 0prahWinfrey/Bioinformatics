@@ -40,22 +40,29 @@
 		  </archive>
 		</configuration>
 	  </plugin>
-	  <plugin>
-		<artifactId>maven-dependency-plugin</artifactId>
-			<executions>
-				<execution>
-					<phase>process-sources</phase>
-
-					<goals>
-						<goal>copy-dependencies</goal>
-					</goals>
-
-					<configuration>
-						<outputDirectory>target</outputDirectory>
-					</configuration>
-				</execution>
-			</executions>
-	</plugin>
+	  	<plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
+		  <appendAssemblyId>false</appendAssemblyId>
+		  <archive>
+			<manifest>
+			  <addClasspath>true</addClasspath>
+			  <mainClass>com.bioinf.lordoftheflies.lotf</mainClass>
+			</manifest>
+		  </archive>
+        </configuration>
+      </plugin>
 	  <plugin>
 		<artifactId>maven-resources-plugin</artifactId>
 		<version>3.1.0</version>
@@ -72,7 +79,7 @@
 						<resource>
 							<directory>src/main/resources</directory>
 							<includes>
-								<include>/*</include>
+								<include>/*.txt</include>
 							</includes>
 						</resource>
 					</resources>
@@ -96,5 +103,10 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+	<dependency>
+		<groupId>net.sourceforge</groupId>
+		<artifactId>jswarm_pso</artifactId>
+		<version>1.0</version>
+	</dependency>
   </dependencies>
 </project>

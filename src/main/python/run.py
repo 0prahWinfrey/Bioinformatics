@@ -28,9 +28,6 @@ from myUtils import *
 import pyswarms as ps
 import numpy.random as random
 
-
-
-
 from importlib import reload
 from multiprocessing import Pool
 
@@ -120,13 +117,14 @@ def opt_func(X):
     n_particles = X.shape[0]  # number of particles
     
     d = 0;
-    #print(X)
-
+    #(n)
+    #print(max(X[0,:]))
+    #print(min(X[0,:]))
 
     #structure = variables #this is xyz
     allDists = np.zeros(n_particles)
     
-    cost= 0
+    cost = 0
     for particle in range(n_particles):
         for i in range(len(structure)):
             structure[i][0]=X[particle][i]
@@ -161,6 +159,7 @@ def opt_func(X):
         allDists[particle] = d/len(structure)
     
     return allDists
+    
 def opt_func_alt(X):
     n_particles = X.shape[0]  # number of particles
     
@@ -168,15 +167,16 @@ def opt_func_alt(X):
     #print(X)
 
 
-    #structure = variables #this is xyz
+    structure = variables #this is xyz
     allDists = np.zeros(n_particles)
     
     cost= 0
+    
     for particle in range(n_particles):
         for i in range(len(structure)):
             structure[i][0]=structure[i][0]+X[particle][i]
-            structure[i][1]=structure[i][0]+ X[particle][i+len(structure)]
-            structure[i][2]=structure[i][0]+X[particle][i+len(structure)*2]
+            structure[i][1]=structure[i][1]+ X[particle][i+len(structure)]
+            structure[i][2]=structure[i][2]+X[particle][i+len(structure)*2]
             
         
         #loop through existing data
@@ -206,10 +206,58 @@ def opt_func_alt(X):
         allDists[particle] = d/len(structure)
     
     return allDists
-## this is convert to distance
+    
+def opt_func_oneGuy(X):
+    n_particles = X.shape[0]  # number of particles
+    
+    d = 0;
+    #print(X)
 
 
-AVG_DIST = 10.0  # an arbitrary distance
+    structure = variables #this is xyz
+    allDists = np.zeros(n_particles)
+    
+    cost= 0
+    
+    for particle in range(n_particles):
+
+        structure[thisXYZ][0]=structure[thisXYZ][0] + X[particle][0]
+        structure[thisXYZ][1]=structure[thisXYZ][0] + X[particle][1]
+        structure[thisXYZ][2]=structure[thisXYZ][0] + X[particle][2]
+            
+        
+        #loop through existing data
+        for k in range(len(lstCons)):
+            #IF = lstCons[k,2];  
+            if (lstCons[k,2] <= 0) :
+                continue
+                
+            
+            i = int(lstCons[k,0]);    
+            j = int(lstCons[k,1]);    
+            if (i != thisXYZ):
+                continue
+
+            dist = lstCons[k,3];
+
+            point1 = np.array((structure[i][0], structure[i][1], structure[i][2]))
+            point2 = np.array((structure[j][0], structure[j][1], structure[j][2]))
+
+            str_dist = np.linalg.norm(point1 - point2)     
+
+            # objective function  
+            d += ((str_dist - dist)**2)
+            
+            #cost
+            #cost += -(n/2) - (n*np.log(np.sqrt(d/n)));
+            
+        
+        allDists[particle] = d/len(structure)
+    
+    return allDists
+
+
+AVG_DIST = 10  # an arbitrary distance
 
 n=int(max(max(lstCons[:,0]),max(lstCons[:,1])))+1
 print("n = ",n)
@@ -226,7 +274,7 @@ for CONVERT_FACTOR in CONVERT_FACTOR_R :
     
     maxIF = 0.0
     ## scale average distance to AVG_DIST
-    avgDist = 10.0;
+    avgDist = AVG_DIST;
     avgAdjIF = 0.0;
     avgAdjCount = 0;
     totalIF = 0;
@@ -267,7 +315,7 @@ for CONVERT_FACTOR in CONVERT_FACTOR_R :
         distResultsList.append(dist)
         if (dist > maxD):
             maxD = dist;
-
+    #print("rand dists are : ", sum(distResultsList)/len(distResultsList))
     result = np.hstack((lstCons, np.atleast_2d(distResultsList).T))
     print(lstCons)
     lstCons = result
@@ -297,33 +345,59 @@ for CONVERT_FACTOR in CONVERT_FACTOR_R :
     dim = n*3       # Dimension of X
     epsilon = 1
     
-    #options = {'c1': 0.5, 'c2':0.3, 'w':0.9, 'k': 3, 'p': 2}#Local Best
     
     max_bound = maxD/2 * np.ones(dim)
     min_bound = - max_bound
     bounds = (min_bound, max_bound)
-
+    
+    
+    lr = 0.9
+    clamp = (-lr , lr)
     optimizer = ps.single.GlobalBestPSO(n_particles=swarm_size,
                                     dimensions=dim,
-                                    options=options )
+                                    options=options , velocity_clamp = clamp)
 
     # Perform optimization
     structure = variables #this is xyz
     
+    
+    
     cost, bestPXYZ = optimizer.optimize(opt_func, iters=MAX_ITERATION, n_processes=10)   
+    
     for i in range(len(variables)):
-        variables[i][0]=bestPXYZ[i]
-        variables[i][1]=bestPXYZ[i+len(variables)]
-        variables[i][2]=bestPXYZ[i+len(variables)*2]
-    #for i in range(10):
-     #   optimizer = ps.single.GlobalBestPSO(n_particles=swarm_size,
-      #                                  dimensions=dim,
-       #                                 options=options )
-        #cost, bestPXYZ = optimizer.optimize(opt_func_alt, iters=10, n_processes=10)   
-        #for i in range(len(variables)):
-        #    variables[i][0]+=bestPXYZ[i]
-        #    variables[i][1]+=bestPXYZ[i+len(variables)]
-        #    variables[i][2]+=bestPXYZ[i+len(variables)*2]
+        variables[i][0] = bestPXYZ[i]
+        variables[i][1] = bestPXYZ[i+len(variables)]
+        variables[i][2] = bestPXYZ[i+len(variables)*2]
+    #print("initRunCost : ", cost)
+    getSpear()
+    '''
+    lr = 1
+    lastCost = cost
+    options = {'c1': 0.9, 'c2':0.9, 'w':0.9, 'k': 3, 'p': 2}#Local Best
+    noImprovment = 0
+    for i in range(n):
+        optimizer = ps.single.LocalBestPSO(n_particles=swarm_size,
+                                    dimensions=3,
+                                    options=options )
+        thisXYZ =  int(random.random()*n)
+        
+        thisCost, bestPXYZ = optimizer.optimize(opt_func_oneGuy, iters=50, n_processes=10, verbose=False)   
+        
+        if lastCost-thisCost > 0:#Less then 1 % improvment
+            #for i in range(len(variables)):
+            variables[thisXYZ][0] += lr*bestPXYZ[0]
+            variables[thisXYZ][1] += lr*bestPXYZ[1]
+            variables[thisXYZ][2] += lr*bestPXYZ[2]
+            lastCost=thisCost
+        else: 
+            print("in else")
+            noImprovment += 1
+            if(noImprovment == n):
+                lr = lr / 10'''
+            
+                
+        
+        
     
     #print(variables)
     getSpear()
