@@ -9,7 +9,6 @@ import time
 import numpy as np
 import pandas as pd
 
-import optimizationFuncs as optim
 from importlib import reload
 
 # Plotting
