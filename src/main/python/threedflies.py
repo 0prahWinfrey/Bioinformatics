@@ -69,6 +69,11 @@ options = {'c1': c1, 'c2': c2, 'w': w}
 
 MAX_ITERATION = config['swarm'][0]['max_iterations']; # maximum number of iterations
 
+topoModel = config['optimization'][0]['model']
+p = config['optimization'][1]['extra_params']['p']
+k = config['optimization'][1]['extra_params']['k']
+
+threads = config['performanceOptions'][0]['numberOfThreads']
 
 
 class outputObj:
@@ -80,6 +85,7 @@ class outputObj:
         self.recordName = []
         for i in range(len(xyzData)):
             self.recordName.append('ATOM')
+            
 def getSpear():
     SUM = 0.0;
 
@@ -88,7 +94,7 @@ def getSpear():
     WishDist = np.zeros(Len);
     count = 1;
     structure = variables;
-    for k in range(len(lstCons)-1):
+    for k in range(len(lstCons)):
         i = int(lstCons[k,0]);    j = int(lstCons[k,1]);    IF = lstCons[k,2];  dist = lstCons[k,3];
         # structure distance   
         x1=structure[i][0];  x2=structure[j][0];
@@ -351,19 +357,44 @@ for CONVERT_FACTOR in CONVERT_FACTOR_R :
     bounds = (min_bound, max_bound)
     
     
-    lr = 0.9
+    lr = 0.5
     clamp = (-lr , lr)
-    optimizer = ps.single.GlobalBestPSO(n_particles=swarm_size,
-                                    dimensions=dim,
-                                    options=options , velocity_clamp = clamp)
-
+    
+    if (topoModel == "pyramid"):
+        from pyswarms.backend.topology import Pyramid
+        my_topology = Pyramid(static=False)
+        optimizer = ps.single.GeneralOptimizerPSO(n_particles=swarm_size,
+                                        dimensions=dim,
+                                        options=options , velocity_clamp = clamp, topology=my_topology)
+    elif (topoModel == "random"):
+        from pyswarms.backend.topology import Random as PSOTopoRandom
+        my_topology = PSOTopoRandom()
+        options = {'c1': c1, 'c2': c2, 'w': w, 'k': k, 'p':p}
+        optimizer = ps.single.GeneralOptimizerPSO(n_particles=swarm_size,
+                                        dimensions=dim,
+                                        options=options , velocity_clamp = clamp, topology=my_topology)
+    elif (topoModel == "star"):
+        from pyswarms.backend.topology import Star
+        my_topology = Star(static=False)
+        optimizer = ps.single.GeneralOptimizerPSO(n_particles=swarm_size,
+                                        dimensions=dim,
+                                        options=options , velocity_clamp = clamp, topology=my_topology)
+    elif (topoModel == "local"):
+        options = {'c1': c1, 'c2': c2, 'w': w, 'k': k, 'p':p}
+        optimizer = ps.single.LocalBestPSO(n_particles=swarm_size,
+                                        dimensions=dim,
+                                        options=options , velocity_clamp = clamp)
+    else:
+        optimizer = ps.single.GlobalBestPSO(n_particles=swarm_size,
+                                        dimensions=dim,
+                                        options=options , velocity_clamp = clamp)
+    
     # Perform optimization
     structure = variables #this is xyz
     
     
     
-    cost, bestPXYZ = optimizer.optimize(opt_func, iters=MAX_ITERATION, n_processes=10)   
-    
+    cost, bestPXYZ = optimizer.optimize(opt_func, iters=MAX_ITERATION, n_processes=threads , verbose=bool(config['performanceOptions'][1]['verbose'])==1)   
     for i in range(len(variables)):
         variables[i][0] = bestPXYZ[i]
         variables[i][1] = bestPXYZ[i+len(variables)]
@@ -395,17 +426,6 @@ for CONVERT_FACTOR in CONVERT_FACTOR_R :
             if(noImprovment == n):
                 lr = lr / 10'''
             
-                
-        
-        
-    
-    #print(variables)
-    getSpear()
-
-        
-        
-    
-
     #========================================================================
     # scoring using spearman correlation, pearson correlation and  RMSD     
     #------------------------------------------------------------------------

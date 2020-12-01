@@ -5,16 +5,38 @@ dist_conv:
       alpha_high: 0.7
       alpha_step_size: 0.2
 
-#learning rate for the optimization process
-#if the program fails to generate structures, try to reduce this learning rate
+
+# * c1 and c2 are the cognitive and social parameters respectively. 
+#   They control the particle’s behavior given two choices: (1) to follow its personal best or 
+#   (2) follow the swarm’s global best position. Overall, this dictates if the swarm is explorative 
+#   or exploitative in nature. 
+# * w controls the inertia of the swarm’s movement.
+# * swarm size controls number of particles
+# * max iterations sets maximum iterations
 swarm:
-    - swarm_size: 15
-      c1: 0.9
-      c2: 0.9
+    - swarm_size: 30
+      c1: 1.5
+      c2: 1.5
       w: 0.9
-      max_iterations: 500
+      max_iterations: 50000
+      init_learning_rate: 0.5
 
 
-#set VERBOSE = true for information during optimization printed out
-misc:
-    verbose: true
+# choose your topology 
+# goes to global if one of the following not chosen : pyramid, random, star, local
+# * k : int 
+#   number of neighbors to be considered. Must be a positive integer less than n_particles
+# * p : int {1,2}
+#   the Minkowski p-norm to use. 1 is the sum-of-absolute values (or L1 distance) 
+#   while 2 is the Euclidean (or L2) distance.
+    
+optimization:
+    - model: 
+    - extra_params:
+        k: 3
+        p: 2
+    
+# Performance
+performanceOptions:
+    - numberOfThreads: 12
+    - verbose: 1
