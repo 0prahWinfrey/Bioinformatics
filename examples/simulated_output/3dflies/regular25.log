@@ -1,0 +1,5 @@
+Input file: ../../../examples/simulatedDataSet/Simulation/data/regular/regular25.txt
+Convert factor:: 0.5
+AVG RMSE  : 4.64991792708968
+AVG Spearman correlation Dist vs. Reconstructed Dist  : 0.9886403105739018
+AVG Pearson correlation Dist vs. Reconstructed Dist  : 0.8911593328028007
