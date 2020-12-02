@@ -1,0 +1,7 @@
+Input file: sparse.IF25
+Convert factor: 1.8000000000000005
+Learning rate: 1.0
+RMSE: 108.9981101650148
+Spearman correlation IFs vs. Reconstructed Dist: -0.6416589982833658
+Spearman correlation WishDist vs. Reconstructed Dist: 0.6416589982833658
+Pearson correlation WishDist vs. Reconstructed Dist: 0.60971320367421
