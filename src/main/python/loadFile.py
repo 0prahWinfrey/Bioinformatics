@@ -46,7 +46,7 @@ class loadFile:
         
         #TO DO sort
         
-        for i in range(len(cont)-1):
+        for i in range(len(cont)):
             for j in range(2):
                 retWithDiag[i][j] = float(cont[i][j])/stepsize
             retWithDiag[i][2] = float(cont[i][2])
