@@ -1,0 +1,7 @@
+Input file: ../../Bioinformatics/examples/simulatedDataSet/Simulation/data/regular/regular70.txt
+Convert factor: 0.5
+Learning rate: 1.0
+AVG RMSE: 96.79224275316346
+AVG Spearman correlation IFs vs. Reconstructed Dist: -0.5950136070699352
+AVG Spearman correlation WishDist vs. Reconstructed Dist: 0.5950136070699352
+AVG Pearson correlation WishDist vs. Reconstructed Dist: 0.6870731151981438
