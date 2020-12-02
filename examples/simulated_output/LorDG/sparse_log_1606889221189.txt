@@ -1,0 +1,6 @@
+Input file: sparse.IF70
+Convert factor: 0.7999999999999999
+Learning rate: 1.0
+RMSE: 70.69944952314944
+Spearman correlation IFs vs. Reconstructed Dist: -0.599800436781349
+Spearman correlation WishDist vs. Reconstructed Dist: 0.599800436781349
