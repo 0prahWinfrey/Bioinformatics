@@ -1,0 +1,6 @@
+Input file: ../../Bioinformatics/examples/simulatedDataSet/Simulation/data/regular/regular90.txt
+Convert factor: 2.9000000000000012
+Learning rate: 1.0
+RMSE: 23.32287289347866
+Spearman correlation IFs vs. Reconstructed Dist: -0.5027241649104826
+Spearman correlation WishDist vs. Reconstructed Dist: 0.5027241649104826
