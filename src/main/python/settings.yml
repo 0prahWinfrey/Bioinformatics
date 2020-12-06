@@ -2,8 +2,8 @@
 #comment out this parameter will make the program to scan for the best factor in [0.1, 2.0]
 dist_conv:
     - alpha_low: 0.1
-      alpha_high: 2.0
-      alpha_step_size: 0.2
+      alpha_high: 0.5
+      alpha_step_size: 0.5
 
 
 # * c1 and c2 are the cognitive and social parameters respectively. 
@@ -14,7 +14,7 @@ dist_conv:
 # * swarm size controls number of particles
 # * max iterations sets maximum iterations
 swarm:
-    - swarm_size: 15
+    - swarm_size: 30
       c1: 1.5
       c2: 1.5
       w: 0.9
@@ -31,7 +31,7 @@ swarm:
 #   while 2 is the Euclidean (or L2) distance.
     
 optimization:
-    - model: 
+    - model: whatever 
     - extra_params:
         k: 3
         p: 2

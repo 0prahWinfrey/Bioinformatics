@@ -1,0 +1,5 @@
+Convert factor: 0.6
+Learning rate: 0.07
+AVG RMSE: 151.34442444687312
+AVG Spearman correlation IFs vs. Reconstructed Dist: -0.9598478547958949
+AVG Spearman correlation Expected Dist vs. Reconstructed Dist: 0.9598478547958947

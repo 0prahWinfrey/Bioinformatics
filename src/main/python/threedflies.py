@@ -54,7 +54,7 @@ lstCons[:,2] = (dataset - np.min(dataset)) / (np.max(dataset) - np.min(dataset))
 ### config
 import yaml
 config = yaml.safe_load(open("settings.yml"))
-swarm_size = config['swarm'][0]['swarm_size']
+swarm_size = int(config['swarm'][0]['swarm_size'])
 
 al = config['dist_conv'][0]['alpha_low']
 ah = config['dist_conv'][0]['alpha_high']
@@ -67,13 +67,12 @@ w = config['swarm'][0]['w']
 options = {'c1': c1, 'c2': c2, 'w': w}
 
 MAX_ITERATION = config['swarm'][0]['max_iterations']; # maximum number of iterations
-
 topoModel = config['optimization'][0]['model']
 p = config['optimization'][1]['extra_params']['p']
 k = config['optimization'][1]['extra_params']['k']
 
-threads = config['performanceOptions'][0]['numberOfThreads']
-
+threads = int(config['performanceOptions'][0]['numberOfThreads'])
+print(threads)
 
 class outputObj:
     def __init__(self, xyzData, outputFile):
@@ -379,16 +378,20 @@ for CONVERT_FACTOR in CONVERT_FACTOR_R :
                                         dimensions=dim,
                                         options=options , velocity_clamp = clamp, topology=my_topology)
     elif (topoModel == "local"):
-        options = {'c1': c1, 'c2': c2, 'w': w, 'k': k, 'p':p}
+        options = {'c1': c1, 'c2': c2, 'w': w, 'k': k, 'p': p}
         optimizer = ps.single.LocalBestPSO(n_particles=swarm_size,
                                         dimensions=dim,
                                         options=options , velocity_clamp = clamp)
     else:
+        print("Chose global best with ", swarm_size, " dims : ", dim, "options : ", options)
+        print()
         optimizer = ps.single.GlobalBestPSO(n_particles=swarm_size,
                                         dimensions=dim,
                                         options=options , velocity_clamp = clamp)
     
+    
     # Perform optimization
+    print("here")
     structure = variables #this is xyz
     
     

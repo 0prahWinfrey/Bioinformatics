@@ -1,0 +1,123 @@
+AUTHOR    ZHANG ZHIZHUO
+ATOM      1 C    LIG T          54.423  27.170  69.491  1.00 75.00    
+ATOM      2 C    LIG T          54.749  20.370  67.638  1.00 75.00    
+ATOM      3 C    LIG T          56.057  17.200  62.527  1.00 75.00    
+ATOM      4 C    LIG T          50.782  15.998  59.167  1.00 75.00    
+ATOM      5 C    LIG T          39.511  23.275  60.709  1.00 75.00    
+ATOM      6 C    LIG T          32.533  26.208  63.828  1.00 75.00    
+ATOM      7 C    LIG T          17.702  34.303  65.560  1.00 75.00    
+ATOM      8 C    LIG T           9.259  38.547  67.136  1.00 75.00    
+ATOM      9 C    LIG T          10.853  34.895  62.441  1.00 75.00    
+ATOM     10 C    LIG T           6.658  42.588  59.932  1.00 75.00    
+ATOM     11 C    LIG T           5.899  38.081  56.452  1.00 75.00    
+ATOM     12 C    LIG T           0.221  44.108  54.909  1.00 75.00    
+ATOM     13 C    LIG T           0.000  49.613  49.173  1.00 75.00    
+ATOM     14 C    LIG T          11.288  40.009  47.013  1.00 75.00    
+ATOM     15 C    LIG T           6.375  32.860  39.826  1.00 75.00    
+ATOM     16 C    LIG T           9.099  30.772  35.792  1.00 75.00    
+ATOM     17 C    LIG T          13.722  36.075  36.198  1.00 75.00    
+ATOM     18 C    LIG T          25.487  33.126  40.007  1.00 75.00    
+ATOM     19 C    LIG T          32.084  30.999  37.125  1.00 75.00    
+ATOM     20 C    LIG T          29.952  36.785  33.424  1.00 75.00    
+ATOM     21 C    LIG T          31.096  41.642  35.028  1.00 75.00    
+ATOM     22 C    LIG T          24.032  49.785  35.445  1.00 75.00    
+ATOM     23 C    LIG T          20.011  57.058  37.606  1.00 75.00    
+ATOM     24 C    LIG T          29.285  53.826  41.638  1.00 75.00    
+ATOM     25 C    LIG T          28.098  59.399  43.756  1.00 75.00    
+ATOM     26 C    LIG T          26.150  60.480  48.573  1.00 75.00    
+ATOM     27 C    LIG T           1.950  75.744  40.975  1.00 75.00    
+ATOM     28 C    LIG T          32.153  72.667  34.368  1.00 75.00    
+ATOM     29 C    LIG T          60.881  40.565  44.517  1.00 75.00    
+ATOM     30 C    LIG T          73.861  32.169  43.523  1.00 75.00    
+ATOM     31 C    LIG T          86.112  22.875  43.151  1.00 75.00    
+ATOM     32 C    LIG T          95.333  20.621  41.420  1.00 75.00    
+ATOM     33 C    LIG T          98.683  26.349  37.778  1.00 75.00    
+ATOM     34 C    LIG T          95.037  30.422  33.127  1.00 75.00    
+ATOM     35 C    LIG T          84.236  35.727  31.676  1.00 75.00    
+ATOM     36 C    LIG T          67.550  44.259  32.930  1.00 75.00    
+ATOM     37 C    LIG T          56.383  53.680  28.431  1.00 75.00    
+ATOM     38 C    LIG T          62.464  53.398  29.561  1.00 75.00    
+ATOM     39 C    LIG T          59.606  59.165  33.465  1.00 75.00    
+ATOM     40 C    LIG T          56.505  63.593  34.688  1.00 75.00    
+ATOM     41 C    LIG T          74.052  56.244  35.196  1.00 75.00    
+ATOM     42 C    LIG T          81.732  52.844  39.357  1.00 75.00    
+ATOM     43 C    LIG T          87.183  54.679  43.622  1.00 75.00    
+ATOM     44 C    LIG T          87.788  59.590  47.782  1.00 75.00    
+ATOM     45 C    LIG T          96.586  59.303  50.698  1.00 75.00    
+ATOM     46 C    LIG T          99.000  52.592  55.140  1.00 75.00    
+ATOM     47 C    LIG T          87.986  50.576  60.339  1.00 75.00    
+ATOM     48 C    LIG T          70.584  57.037  60.057  1.00 75.00    
+ATOM     49 C    LIG T          56.670  63.045  61.243  1.00 75.00    
+ATOM     50 C    LIG T          48.387  72.374  65.391  1.00 75.00    
+ATOM     51 C    LIG T          53.535  71.950  70.642  1.00 75.00    
+ATOM     52 C    LIG T          40.312  79.616  63.076  1.00 75.00    
+ATOM     53 C    LIG T          40.196  81.517  57.461  1.00 75.00    
+ATOM     54 C    LIG T          53.289  73.843  56.171  1.00 75.00    
+ATOM     55 C    LIG T          64.775  73.719  57.860  1.00 75.00    
+ATOM     56 C    LIG T          64.572  73.687  52.107  1.00 75.00    
+ATOM     57 C    LIG T          50.390  77.046  48.079  1.00 75.00    
+ATOM     58 C    LIG T          43.985  87.177  47.897  1.00 75.00    
+ATOM     59 C    LIG T          58.745  73.735  52.084  1.00 75.00    
+ATOM     60 C    LIG T          80.673  59.018  68.141  1.00 75.00    
+ATOM     61 C    LIG T          92.230  52.749  76.399  1.00 75.00    
+CONECT    1   2
+CONECT    2   3
+CONECT    3   4
+CONECT    4   5
+CONECT    5   6
+CONECT    6   7
+CONECT    7   8
+CONECT    8   9
+CONECT    9  10
+CONECT   10  11
+CONECT   11  12
+CONECT   12  13
+CONECT   13  14
+CONECT   14  15
+CONECT   15  16
+CONECT   16  17
+CONECT   17  18
+CONECT   18  19
+CONECT   19  20
+CONECT   20  21
+CONECT   21  22
+CONECT   22  23
+CONECT   23  24
+CONECT   24  25
+CONECT   25  26
+CONECT   26  27
+CONECT   27  28
+CONECT   28  29
+CONECT   29  30
+CONECT   30  31
+CONECT   31  32
+CONECT   32  33
+CONECT   33  34
+CONECT   34  35
+CONECT   35  36
+CONECT   36  37
+CONECT   37  38
+CONECT   38  39
+CONECT   39  40
+CONECT   40  41
+CONECT   41  42
+CONECT   42  43
+CONECT   43  44
+CONECT   44  45
+CONECT   45  46
+CONECT   46  47
+CONECT   47  48
+CONECT   48  49
+CONECT   49  50
+CONECT   50  51
+CONECT   51  52
+CONECT   52  53
+CONECT   53  54
+CONECT   54  55
+CONECT   55  56
+CONECT   56  57
+CONECT   57  58
+CONECT   58  59
+CONECT   59  60
+CONECT   60  61
+END

@@ -1,0 +1,167 @@
+AUTHOR    ZHANG ZHIZHUO
+ATOM      1 C    LIG O           7.424  49.861  44.742  1.00 75.00    
+ATOM      2 C    LIG O           1.099  40.998  44.736  1.00 75.00    
+ATOM      3 C    LIG O          16.529  46.257  49.680  1.00 75.00    
+ATOM      4 C    LIG O          10.742  48.798  53.081  1.00 75.00    
+ATOM      5 C    LIG O           0.000  53.848  52.597  1.00 75.00    
+ATOM      6 C    LIG O           6.490  53.491  54.967  1.00 75.00    
+ATOM      7 C    LIG O           5.327  56.192  52.091  1.00 75.00    
+ATOM      8 C    LIG O           4.571  56.569  47.876  1.00 75.00    
+ATOM      9 C    LIG O          14.361  54.099  48.493  1.00 75.00    
+ATOM     10 C    LIG O          22.510  50.893  45.262  1.00 75.00    
+ATOM     11 C    LIG O          20.764  46.777  41.233  1.00 75.00    
+ATOM     12 C    LIG O          36.652  35.842  44.358  1.00 75.00    
+ATOM     13 C    LIG O          29.184  42.182  42.744  1.00 75.00    
+ATOM     14 C    LIG O          35.375  39.987  45.875  1.00 75.00    
+ATOM     15 C    LIG O          38.360  34.286  51.911  1.00 75.00    
+ATOM     16 C    LIG O          31.366  36.515  56.101  1.00 75.00    
+ATOM     17 C    LIG O          24.088  38.762  58.221  1.00 75.00    
+ATOM     18 C    LIG O          25.599  41.201  60.329  1.00 75.00    
+ATOM     19 C    LIG O          34.201  37.580  61.555  1.00 75.00    
+ATOM     20 C    LIG O          39.396  36.917  59.812  1.00 75.00    
+ATOM     21 C    LIG O          53.153  26.971  64.808  1.00 75.00    
+ATOM     22 C    LIG O          63.358  19.954  68.700  1.00 75.00    
+ATOM     23 C    LIG O          67.199  21.232  69.893  1.00 75.00    
+ATOM     24 C    LIG O          67.067  24.388  72.596  1.00 75.00    
+ATOM     25 C    LIG O          60.196  31.988  68.697  1.00 75.00    
+ATOM     26 C    LIG O          48.251  40.125  65.097  1.00 75.00    
+ATOM     27 C    LIG O          26.208  53.874  61.323  1.00 75.00    
+ATOM     28 C    LIG O          25.925  53.978  64.221  1.00 75.00    
+ATOM     29 C    LIG O          36.475  49.396  65.464  1.00 75.00    
+ATOM     30 C    LIG O          41.096  46.335  68.940  1.00 75.00    
+ATOM     31 C    LIG O          45.733  44.941  68.332  1.00 75.00    
+ATOM     32 C    LIG O          52.934  43.978  63.029  1.00 75.00    
+ATOM     33 C    LIG O          54.755  41.864  59.153  1.00 75.00    
+ATOM     34 C    LIG O          41.913  53.067  50.614  1.00 75.00    
+ATOM     35 C    LIG O          37.389  55.086  43.135  1.00 75.00    
+ATOM     36 C    LIG O          43.457  51.447  43.940  1.00 75.00    
+ATOM     37 C    LIG O          50.549  46.754  43.854  1.00 75.00    
+ATOM     38 C    LIG O          57.436  41.662  43.811  1.00 75.00    
+ATOM     39 C    LIG O          61.041  39.343  40.647  1.00 75.00    
+ATOM     40 C    LIG O          67.615  34.000  42.312  1.00 75.00    
+ATOM     41 C    LIG O          62.918  44.615  37.799  1.00 75.00    
+ATOM     42 C    LIG O          60.940  48.601  36.586  1.00 75.00    
+ATOM     43 C    LIG O          65.515  45.805  43.273  1.00 75.00    
+ATOM     44 C    LIG O          75.888  36.836  47.846  1.00 75.00    
+ATOM     45 C    LIG O          89.312  26.782  52.237  1.00 75.00    
+ATOM     46 C    LIG O          92.145  30.777  52.060  1.00 75.00    
+ATOM     47 C    LIG O          90.529  35.778  47.615  1.00 75.00    
+ATOM     48 C    LIG O          89.176  38.856  42.264  1.00 75.00    
+ATOM     49 C    LIG O          85.570  42.492  40.465  1.00 75.00    
+ATOM     50 C    LIG O          81.422  48.331  37.808  1.00 75.00    
+ATOM     51 C    LIG O          84.270  50.736  35.375  1.00 75.00    
+ATOM     52 C    LIG O          75.539  53.852  38.271  1.00 75.00    
+ATOM     53 C    LIG O          82.948  49.702  46.490  1.00 75.00    
+ATOM     54 C    LIG O          80.852  54.084  47.091  1.00 75.00    
+ATOM     55 C    LIG O          91.775  50.367  52.981  1.00 75.00    
+ATOM     56 C    LIG O          99.000  48.066  60.216  1.00 75.00    
+ATOM     57 C    LIG O          89.253  52.567  60.324  1.00 75.00    
+ATOM     58 C    LIG O          91.306  56.229  59.147  1.00 75.00    
+ATOM     59 C    LIG O          90.503  58.604  54.997  1.00 75.00    
+ATOM     60 C    LIG O          82.514  63.201  51.457  1.00 75.00    
+ATOM     61 C    LIG O          78.587  66.089  47.410  1.00 75.00    
+ATOM     62 C    LIG O          73.310  68.460  42.997  1.00 75.00    
+ATOM     63 C    LIG O          69.977  70.710  40.509  1.00 75.00    
+ATOM     64 C    LIG O          73.035  68.874  49.342  1.00 75.00    
+ATOM     65 C    LIG O          67.496  70.669  46.392  1.00 75.00    
+ATOM     66 C    LIG O          70.901  68.271  56.407  1.00 75.00    
+ATOM     67 C    LIG O          56.532  72.845  48.200  1.00 75.00    
+ATOM     68 C    LIG O          45.146  77.085  44.863  1.00 75.00    
+ATOM     69 C    LIG O          50.099  75.597  46.771  1.00 75.00    
+ATOM     70 C    LIG O          63.315  68.158  57.330  1.00 75.00    
+ATOM     71 C    LIG O          73.706  66.219  66.140  1.00 75.00    
+ATOM     72 C    LIG O          70.048  72.718  65.063  1.00 75.00    
+ATOM     73 C    LIG O          59.373  78.642  54.416  1.00 75.00    
+ATOM     74 C    LIG O          56.400  78.869  56.403  1.00 75.00    
+ATOM     75 C    LIG O          48.031  81.586  53.710  1.00 75.00    
+ATOM     76 C    LIG O          41.801  88.291  54.831  1.00 75.00    
+ATOM     77 C    LIG O          44.646  87.296  59.860  1.00 75.00    
+ATOM     78 C    LIG O          37.266  89.443  56.466  1.00 75.00    
+ATOM     79 C    LIG O          37.757  84.691  56.857  1.00 75.00    
+ATOM     80 C    LIG O          50.986  79.571  63.228  1.00 75.00    
+ATOM     81 C    LIG O          52.673  77.626  66.306  1.00 75.00    
+ATOM     82 C    LIG O          58.102  75.306  69.567  1.00 75.00    
+ATOM     83 C    LIG O          57.642  79.257  72.392  1.00 75.00    
+CONECT    1   2
+CONECT    2   3
+CONECT    3   4
+CONECT    4   5
+CONECT    5   6
+CONECT    6   7
+CONECT    7   8
+CONECT    8   9
+CONECT    9  10
+CONECT   10  11
+CONECT   11  12
+CONECT   12  13
+CONECT   13  14
+CONECT   14  15
+CONECT   15  16
+CONECT   16  17
+CONECT   17  18
+CONECT   18  19
+CONECT   19  20
+CONECT   20  21
+CONECT   21  22
+CONECT   22  23
+CONECT   23  24
+CONECT   24  25
+CONECT   25  26
+CONECT   26  27
+CONECT   27  28
+CONECT   28  29
+CONECT   29  30
+CONECT   30  31
+CONECT   31  32
+CONECT   32  33
+CONECT   33  34
+CONECT   34  35
+CONECT   35  36
+CONECT   36  37
+CONECT   37  38
+CONECT   38  39
+CONECT   39  40
+CONECT   40  41
+CONECT   41  42
+CONECT   42  43
+CONECT   43  44
+CONECT   44  45
+CONECT   45  46
+CONECT   46  47
+CONECT   47  48
+CONECT   48  49
+CONECT   49  50
+CONECT   50  51
+CONECT   51  52
+CONECT   52  53
+CONECT   53  54
+CONECT   54  55
+CONECT   55  56
+CONECT   56  57
+CONECT   57  58
+CONECT   58  59
+CONECT   59  60
+CONECT   60  61
+CONECT   61  62
+CONECT   62  63
+CONECT   63  64
+CONECT   64  65
+CONECT   65  66
+CONECT   66  67
+CONECT   67  68
+CONECT   68  69
+CONECT   69  70
+CONECT   70  71
+CONECT   71  72
+CONECT   72  73
+CONECT   73  74
+CONECT   74  75
+CONECT   75  76
+CONECT   76  77
+CONECT   77  78
+CONECT   78  79
+CONECT   79  80
+CONECT   80  81
+CONECT   81  82
+CONECT   82  83
+END

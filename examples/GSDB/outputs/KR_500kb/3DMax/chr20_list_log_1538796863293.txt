@@ -1,0 +1,6 @@
+Input file: /storage/htc/bdm/tosin/GSDB/Data/OO7429SF/primary/GM12878_normalized/GM12878/KR_500kb/chr20_list.txt
+Convert factor: 0.4
+Learning rate: 1.0
+RMSE: 130.4277957798017
+Spearman correlation IFs vs. Reconstructed Dist: -0.9473421060627296
+Spearman correlation Expected Dist vs. Reconstructed Dist: 0.9473421060627303
