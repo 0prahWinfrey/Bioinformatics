@@ -1,0 +1,5 @@
+Input file: ../../../examples/GSDB/inputs/KR_500kb/chr19_matrix.txt
+Convert factor:: 0.1
+AVG RMSE  : 2.539841151142625
+AVG Spearman correlation Dist vs. Reconstructed Dist  : 0.7910313405062224
+AVG Pearson correlation Dist vs. Reconstructed Dist  : 0.7935428131152215
