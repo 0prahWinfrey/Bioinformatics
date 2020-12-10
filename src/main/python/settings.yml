@@ -18,7 +18,7 @@ swarm:
       c1: 1.5
       c2: 1.5
       w: 0.9
-      max_iterations: 2000
+      max_iterations: 5000
       init_learning_rate: 0.5
 
 
@@ -31,12 +31,12 @@ swarm:
 #   while 2 is the Euclidean (or L2) distance.
     
 optimization:
-    - model: whatever 
+    - model: globe 
     - extra_params:
         k: 3
         p: 2
     
 # Performance
 performanceOptions:
-    - numberOfThreads: 12
+    - numberOfThreads: 14
     - verbose: 1
