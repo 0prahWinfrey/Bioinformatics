@@ -1,0 +1,5 @@
+Input file: ../../../examples/GM12878_input/KR_1mb/chr22_matrix.txt
+Convert factor:: 0.1
+AVG RMSE  : 2.4821802721331836
+AVG Spearman correlation Dist vs. Reconstructed Dist  : 0.7127454399757933
+AVG Pearson correlation Dist vs. Reconstructed Dist  : 0.6966712166877139
