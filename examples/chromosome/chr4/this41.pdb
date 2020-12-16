@@ -1,0 +1,380 @@
+ATOM      0 CA   MET B   0      30.827 -41.269 -85.982  1.00  0.00           O    
+ATOM      1 CA   MET B   1     -46.645 -48.135 -56.211  1.00  0.00           O    
+ATOM      2 CA   MET B   2      18.400  25.333  88.160  1.00  0.00           O    
+ATOM      3 CA   MET B   3      -7.055 100.000  -3.066  1.00  0.00           O    
+ATOM      4 CA   MET B   4     -60.306 -48.599 -29.022  1.00  0.00           O    
+ATOM      5 CA   MET B   5     -78.954  10.804 -49.205  1.00  0.00           O    
+ATOM      6 CA   MET B   6      53.800 -30.892  79.907  1.00  0.00           O    
+ATOM      7 CA   MET B   7      65.997  71.456 -25.677  1.00  0.00           O    
+ATOM      8 CA   MET B   8     -35.572  83.648  27.532  1.00  0.00           O    
+ATOM      9 CA   MET B   9      46.408 -46.941  50.058  1.00  0.00           O    
+ATOM     10 CA   MET B  10     -60.354 -48.905  40.146  1.00  0.00           O    
+ATOM     11 CA   MET B  11      -9.881  24.889 -76.088  1.00  0.00           O    
+ATOM     12 CA   MET B  12      88.422  -3.816   1.465  1.00  0.00           O    
+ATOM     13 CA   MET B  13      52.949 -43.355  41.218  1.00  0.00           O    
+ATOM     14 CA   MET B  14     -56.453   6.500   7.175  1.00  0.00           O    
+ATOM     15 CA   MET B  15       9.817  68.360  48.440  1.00  0.00           O    
+ATOM     16 CA   MET B  16      33.538  32.025 -69.091  1.00  0.00           O    
+ATOM     17 CA   MET B  17      17.606 -45.229  77.120  1.00  0.00           O    
+ATOM     18 CA   MET B  18      -9.677 -65.151  52.220  1.00  0.00           O    
+ATOM     19 CA   MET B  19     -35.093   5.770  74.220  1.00  0.00           O    
+ATOM     20 CA   MET B  20       6.197  30.795  62.091  1.00  0.00           O    
+ATOM     21 CA   MET B  21      77.333  50.206 -26.223  1.00  0.00           O    
+ATOM     22 CA   MET B  22     -78.466  -3.548 -55.681  1.00  0.00           O    
+ATOM     23 CA   MET B  23     -11.866 -35.521  73.031  1.00  0.00           O    
+ATOM     24 CA   MET B  24     -32.780 -52.745  -8.379  1.00  0.00           O    
+ATOM     25 CA   MET B  25     -67.479   5.311  40.482  1.00  0.00           O    
+ATOM     26 CA   MET B  26      36.066  -8.958 -75.961  1.00  0.00           O    
+ATOM     27 CA   MET B  27      21.185  40.333  99.505  1.00  0.00           O    
+ATOM     28 CA   MET B  28      55.780   4.930 -62.877  1.00  0.00           O    
+ATOM     29 CA   MET B  29      68.788 -41.520  34.366  1.00  0.00           O    
+ATOM     30 CA   MET B  30      61.130  -7.681 -19.510  1.00  0.00           O    
+ATOM     31 CA   MET B  31     -41.179  30.360  67.198  1.00  0.00           O    
+ATOM     32 CA   MET B  32     -62.987  37.915 -44.843  1.00  0.00           O    
+ATOM     33 CA   MET B  33      81.864 -25.136 -39.203  1.00  0.00           O    
+ATOM     34 CA   MET B  34     -27.658 -53.791  45.459  1.00  0.00           O    
+ATOM     35 CA   MET B  35     -11.708 -48.072 -36.701  1.00  0.00           O    
+ATOM     36 CA   MET B  36      53.706  75.034  13.142  1.00  0.00           O    
+ATOM     37 CA   MET B  37      45.052 -58.565  40.379  1.00  0.00           O    
+ATOM     38 CA   MET B  38     -70.455  34.618  38.016  1.00  0.00           O    
+ATOM     39 CA   MET B  39     -86.087  13.024 -18.804  1.00  0.00           O    
+ATOM     40 CA   MET B  40       5.211  78.585 -49.645  1.00  0.00           O    
+ATOM     41 CA   MET B  41       9.661  53.788 -49.591  1.00  0.00           O    
+ATOM     42 CA   MET B  42      64.961 -16.236  66.586  1.00  0.00           O    
+ATOM     43 CA   MET B  43     -25.218  71.511 -50.844  1.00  0.00           O    
+ATOM     44 CA   MET B  44      -4.417 -43.565   7.098  1.00  0.00           O    
+ATOM     45 CA   MET B  45      39.512  -8.822 -72.483  1.00  0.00           O    
+ATOM     46 CA   MET B  46      47.199  45.946  55.493  1.00  0.00           O    
+ATOM     47 CA   MET B  47     -52.220  55.997  14.072  1.00  0.00           O    
+ATOM     48 CA   MET B  48      11.340  58.143 -20.259  1.00  0.00           O    
+ATOM     49 CA   MET B  49     -15.914  83.234  48.151  1.00  0.00           O    
+ATOM     50 CA   MET B  50      61.729  46.335 -46.219  1.00  0.00           O    
+ATOM     51 CA   MET B  51      30.888  43.347  43.900  1.00  0.00           O    
+ATOM     52 CA   MET B  52     -39.332  28.022 -40.612  1.00  0.00           O    
+ATOM     53 CA   MET B  53      75.515   3.281  37.111  1.00  0.00           O    
+ATOM     54 CA   MET B  54      59.359  59.169 -37.776  1.00  0.00           O    
+ATOM     55 CA   MET B  55     -36.024 -57.095 -34.787  1.00  0.00           O    
+ATOM     56 CA   MET B  56      85.070  -8.964  16.750  1.00  0.00           O    
+ATOM     57 CA   MET B  57       5.922 -73.001 -21.943  1.00  0.00           O    
+ATOM     58 CA   MET B  58      58.957 -51.214  13.697  1.00  0.00           O    
+ATOM     59 CA   MET B  59     -46.804  72.306  22.908  1.00  0.00           O    
+ATOM     60 CA   MET B  60     -32.651   2.649 -85.302  1.00  0.00           O    
+ATOM     61 CA   MET B  61      69.389  41.628  58.092  1.00  0.00           O    
+ATOM     62 CA   MET B  62     -15.705 -58.995  13.699  1.00  0.00           O    
+ATOM     63 CA   MET B  63     -45.291 -37.462  56.148  1.00  0.00           O    
+ATOM     64 CA   MET B  64       8.939  75.407   1.212  1.00  0.00           O    
+ATOM     65 CA   MET B  65      38.133  32.966  53.039  1.00  0.00           O    
+ATOM     66 CA   MET B  66      65.063 -44.591 -41.627  1.00  0.00           O    
+ATOM     67 CA   MET B  67      48.103 -34.400 -37.471  1.00  0.00           O    
+ATOM     68 CA   MET B  68     -39.245 -55.149  34.145  1.00  0.00           O    
+ATOM     69 CA   MET B  69     -11.283  81.541  11.786  1.00  0.00           O    
+ATOM     70 CA   MET B  70     -63.314   2.859  38.437  1.00  0.00           O    
+ATOM     71 CA   MET B  71     -52.063 -16.642 -52.494  1.00  0.00           O    
+ATOM     72 CA   MET B  72      69.205   0.352  29.224  1.00  0.00           O    
+ATOM     73 CA   MET B  73      98.187 -37.644   2.887  1.00  0.00           O    
+ATOM     74 CA   MET B  74      19.923  -4.389  77.501  1.00  0.00           O    
+ATOM     75 CA   MET B  75       7.841 -27.647  74.023  1.00  0.00           O    
+ATOM     76 CA   MET B  76     -39.219  69.817 -22.368  1.00  0.00           O    
+ATOM     77 CA   MET B  77     -33.735  70.239  11.081  1.00  0.00           O    
+ATOM     78 CA   MET B  78     -39.037  28.446  39.654  1.00  0.00           O    
+ATOM     79 CA   MET B  79      40.468  52.881 -31.164  1.00  0.00           O    
+ATOM     80 CA   MET B  80      -0.792 -63.839 -65.464  1.00  0.00           O    
+ATOM     81 CA   MET B  81      30.149 -70.414   5.279  1.00  0.00           O    
+ATOM     82 CA   MET B  82       5.603  33.149 -22.082  1.00  0.00           O    
+ATOM     83 CA   MET B  83      61.515 -62.407 -37.573  1.00  0.00           O    
+ATOM     84 CA   MET B  84     -59.432 -34.263 -15.085  1.00  0.00           O    
+ATOM     85 CA   MET B  85      32.071 -47.711 -13.257  1.00  0.00           O    
+ATOM     86 CA   MET B  86     -15.189  41.513  61.557  1.00  0.00           O    
+ATOM     87 CA   MET B  87      73.705  54.914  66.147  1.00  0.00           O    
+ATOM     88 CA   MET B  88      16.710 -50.739 -26.440  1.00  0.00           O    
+ATOM     89 CA   MET B  89     -30.479  -9.080  75.066  1.00  0.00           O    
+ATOM     90 CA   MET B  90      59.024 -69.532  -5.456  1.00  0.00           O    
+ATOM     91 CA   MET B  91      46.449  62.483 -35.255  1.00  0.00           O    
+ATOM     92 CA   MET B  92     -22.366  51.978  61.604  1.00  0.00           O    
+ATOM     93 CA   MET B  93     -55.359  40.169 -20.961  1.00  0.00           O    
+ATOM     94 CA   MET B  94     -53.461  29.883 -15.054  1.00  0.00           O    
+ATOM     95 CA   MET B  95      -7.738  40.130 -56.290  1.00  0.00           O    
+ATOM     96 CA   MET B  96     -58.699 -18.396 -33.163  1.00  0.00           O    
+ATOM     97 CA   MET B  97      30.563 -19.829  63.682  1.00  0.00           O    
+ATOM     98 CA   MET B  98     -26.597 -34.928 -60.170  1.00  0.00           O    
+ATOM     99 CA   MET B  99     -51.658  32.155  -3.959  1.00  0.00           O    
+ATOM    100 CA   MET B 100     -78.627  -2.161  18.671  1.00  0.00           O    
+ATOM    101 CA   MET B 101     -24.804 -25.582 -22.171  1.00  0.00           O    
+ATOM    102 CA   MET B 102     -31.151  30.812 -46.438  1.00  0.00           O    
+ATOM    103 CA   MET B 103      43.825  29.335 -73.785  1.00  0.00           O    
+ATOM    104 CA   MET B 104      34.993 -55.490  -8.480  1.00  0.00           O    
+ATOM    105 CA   MET B 105     -24.260 -13.986  70.480  1.00  0.00           O    
+ATOM    106 CA   MET B 106      10.058  20.197  -7.620  1.00  0.00           O    
+ATOM    107 CA   MET B 107      17.065  59.150 -81.511  1.00  0.00           O    
+ATOM    108 CA   MET B 108       5.713  86.537  33.413  1.00  0.00           O    
+ATOM    109 CA   MET B 109      -2.981  -0.978 -34.674  1.00  0.00           O    
+ATOM    110 CA   MET B 110      53.707  30.767 -13.717  1.00  0.00           O    
+ATOM    111 CA   MET B 111     -29.050 -15.049  58.604  1.00  0.00           O    
+ATOM    112 CA   MET B 112      36.331  60.138   1.573  1.00  0.00           O    
+ATOM    113 CA   MET B 113      -6.985 -13.500 -69.980  1.00  0.00           O    
+ATOM    114 CA   MET B 114      40.125 -10.890  38.693  1.00  0.00           O    
+ATOM    115 CA   MET B 115     -25.562 -33.762  58.874  1.00  0.00           O    
+ATOM    116 CA   MET B 116       6.679  24.320  43.131  1.00  0.00           O    
+ATOM    117 CA   MET B 117      -8.399  49.284 -12.199  1.00  0.00           O    
+ATOM    118 CA   MET B 118      -3.389 -75.783  15.536  1.00  0.00           O    
+ATOM    119 CA   MET B 119      13.352 -29.965 -59.549  1.00  0.00           O    
+ATOM    120 CA   MET B 120     -32.533  25.223 -60.140  1.00  0.00           O    
+ATOM    121 CA   MET B 121     -22.538 -32.479  73.865  1.00  0.00           O    
+ATOM    122 CA   MET B 122       1.132 -49.195 -36.442  1.00  0.00           O    
+ATOM    123 CA   MET B 123     -18.572  96.664  48.274  1.00  0.00           O    
+ATOM    124 CA   MET B 124     -52.443 -27.935  34.784  1.00  0.00           O    
+ATOM    125 CA   MET B 125     -35.675  11.902  34.982  1.00  0.00           O    
+ATOM    126 CA   MET B 126      22.318  69.795 -61.926  1.00  0.00           O    
+ATOM    127 CA   MET B 127      61.213  -4.542   3.738  1.00  0.00           O    
+ATOM    128 CA   MET B 128      10.445   1.092 -46.455  1.00  0.00           O    
+ATOM    129 CA   MET B 129      33.775 -17.881  86.833  1.00  0.00           O    
+ATOM    130 CA   MET B 130      17.921  -1.861  37.647  1.00  0.00           O    
+ATOM    131 CA   MET B 131      86.702  24.001  22.730  1.00  0.00           O    
+ATOM    132 CA   MET B 132      80.359 -46.692   2.639  1.00  0.00           O    
+ATOM    133 CA   MET B 133      84.477   0.828 -53.937  1.00  0.00           O    
+ATOM    134 CA   MET B 134     -17.368 -20.985  87.810  1.00  0.00           O    
+ATOM    135 CA   MET B 135      35.007  41.405  64.580  1.00  0.00           O    
+ATOM    136 CA   MET B 136      -2.262  66.464  41.969  1.00  0.00           O    
+ATOM    137 CA   MET B 137      28.502  84.176  50.081  1.00  0.00           O    
+ATOM    138 CA   MET B 138     -59.548  16.699 -19.006  1.00  0.00           O    
+ATOM    139 CA   MET B 139     -32.121   1.488 -41.586  1.00  0.00           O    
+ATOM    140 CA   MET B 140      48.655 -51.350  -7.232  1.00  0.00           O    
+ATOM    141 CA   MET B 141      32.241  52.876  63.130  1.00  0.00           O    
+ATOM    142 CA   MET B 142      46.251  53.685  50.939  1.00  0.00           O    
+ATOM    143 CA   MET B 143     -42.902  37.164  35.034  1.00  0.00           O    
+ATOM    144 CA   MET B 144     -31.061   9.637  53.208  1.00  0.00           O    
+ATOM    145 CA   MET B 145      17.767 -55.523  18.287  1.00  0.00           O    
+ATOM    146 CA   MET B 146      30.209  70.486  50.416  1.00  0.00           O    
+ATOM    147 CA   MET B 147     -39.436 -35.293 -22.418  1.00  0.00           O    
+ATOM    148 CA   MET B 148       4.706 -34.447  37.459  1.00  0.00           O    
+ATOM    149 CA   MET B 149     -28.541  -3.600   1.407  1.00  0.00           O    
+ATOM    150 CA   MET B 150     -71.262  -1.392  38.485  1.00  0.00           O    
+ATOM    151 CA   MET B 151      54.963  45.594  -5.850  1.00  0.00           O    
+ATOM    152 CA   MET B 152     -42.038 -34.984  63.682  1.00  0.00           O    
+ATOM    153 CA   MET B 153      55.628  22.482  30.256  1.00  0.00           O    
+ATOM    154 CA   MET B 154      37.620 -13.627  56.951  1.00  0.00           O    
+ATOM    155 CA   MET B 155      39.734  78.748   3.907  1.00  0.00           O    
+ATOM    156 CA   MET B 156      11.054  79.830  18.704  1.00  0.00           O    
+ATOM    157 CA   MET B 157      14.113 -67.341 -23.800  1.00  0.00           O    
+ATOM    158 CA   MET B 158      64.130  -5.599 -45.634  1.00  0.00           O    
+ATOM    159 CA   MET B 159      79.657  41.127  17.612  1.00  0.00           O    
+ATOM    160 CA   MET B 160      78.778  30.341  44.419  1.00  0.00           O    
+ATOM    161 CA   MET B 161      64.956 -28.062 -45.303  1.00  0.00           O    
+ATOM    162 CA   MET B 162     -47.259  19.336  17.906  1.00  0.00           O    
+ATOM    163 CA   MET B 163      39.380  54.516 -78.890  1.00  0.00           O    
+ATOM    164 CA   MET B 164      49.419  44.502  62.340  1.00  0.00           O    
+ATOM    165 CA   MET B 165      -2.890 -87.690  43.585  1.00  0.00           O    
+ATOM    166 CA   MET B 166     -22.719 -11.012 -85.313  1.00  0.00           O    
+ATOM    167 CA   MET B 167       1.004 -43.887 -50.024  1.00  0.00           O    
+ATOM    168 CA   MET B 168     -37.071  61.057  71.272  1.00  0.00           O    
+ATOM    169 CA   MET B 169      65.464 -29.749 -12.096  1.00  0.00           O    
+ATOM    170 CA   MET B 170      71.343  24.839 -63.292  1.00  0.00           O    
+ATOM    171 CA   MET B 171     -43.470 -36.494 -46.347  1.00  0.00           O    
+ATOM    172 CA   MET B 172      55.038  22.501 -38.046  1.00  0.00           O    
+ATOM    173 CA   MET B 173      -7.287   8.472 -40.021  1.00  0.00           O    
+ATOM    174 CA   MET B 174      87.131   7.479 -19.448  1.00  0.00           O    
+ATOM    175 CA   MET B 175      48.681 -57.799  52.581  1.00  0.00           O    
+ATOM    176 CA   MET B 176     -13.392  72.797 -33.147  1.00  0.00           O    
+ATOM    177 CA   MET B 177      25.875 -47.529 -62.101  1.00  0.00           O    
+ATOM    178 CA   MET B 178     -54.236  68.464 -33.043  1.00  0.00           O    
+ATOM    179 CA   MET B 179      12.268  16.341 -49.165  1.00  0.00           O    
+ATOM    180 CA   MET B 180      85.550  37.905   7.208  1.00  0.00           O    
+ATOM    181 CA   MET B 181      71.425  47.408 -34.783  1.00  0.00           O    
+ATOM    182 CA   MET B 182     -38.029 -28.153  15.784  1.00  0.00           O    
+ATOM    183 CA   MET B 183     -69.755  57.620  -6.884  1.00  0.00           O    
+ATOM    184 CA   MET B 184     -82.598  55.802  -8.538  1.00  0.00           O    
+ATOM    185 CA   MET B 185      17.884  27.009   5.027  1.00  0.00           O    
+ATOM    186 CA   MET B 186      12.949  50.216  60.545  1.00  0.00           O    
+ATOM    187 CA   MET B 187      40.503 -46.303  46.920  1.00  0.00           O    
+ATOM    188 CA   MET B 188      40.259 -21.706 -83.262  1.00  0.00           O    
+ATOM    189 CA   MET B 189     -95.366 -37.493 -23.750  1.00  0.00           O    
+CONECT    0    1
+CONECT    1    2
+CONECT    2    3
+CONECT    3    4
+CONECT    4    5
+CONECT    5    6
+CONECT    6    7
+CONECT    7    8
+CONECT    8    9
+CONECT    9   10
+CONECT   10   11
+CONECT   11   12
+CONECT   12   13
+CONECT   13   14
+CONECT   14   15
+CONECT   15   16
+CONECT   16   17
+CONECT   17   18
+CONECT   18   19
+CONECT   19   20
+CONECT   20   21
+CONECT   21   22
+CONECT   22   23
+CONECT   23   24
+CONECT   24   25
+CONECT   25   26
+CONECT   26   27
+CONECT   27   28
+CONECT   28   29
+CONECT   29   30
+CONECT   30   31
+CONECT   31   32
+CONECT   32   33
+CONECT   33   34
+CONECT   34   35
+CONECT   35   36
+CONECT   36   37
+CONECT   37   38
+CONECT   38   39
+CONECT   39   40
+CONECT   40   41
+CONECT   41   42
+CONECT   42   43
+CONECT   43   44
+CONECT   44   45
+CONECT   45   46
+CONECT   46   47
+CONECT   47   48
+CONECT   48   49
+CONECT   49   50
+CONECT   50   51
+CONECT   51   52
+CONECT   52   53
+CONECT   53   54
+CONECT   54   55
+CONECT   55   56
+CONECT   56   57
+CONECT   57   58
+CONECT   58   59
+CONECT   59   60
+CONECT   60   61
+CONECT   61   62
+CONECT   62   63
+CONECT   63   64
+CONECT   64   65
+CONECT   65   66
+CONECT   66   67
+CONECT   67   68
+CONECT   68   69
+CONECT   69   70
+CONECT   70   71
+CONECT   71   72
+CONECT   72   73
+CONECT   73   74
+CONECT   74   75
+CONECT   75   76
+CONECT   76   77
+CONECT   77   78
+CONECT   78   79
+CONECT   79   80
+CONECT   80   81
+CONECT   81   82
+CONECT   82   83
+CONECT   83   84
+CONECT   84   85
+CONECT   85   86
+CONECT   86   87
+CONECT   87   88
+CONECT   88   89
+CONECT   89   90
+CONECT   90   91
+CONECT   91   92
+CONECT   92   93
+CONECT   93   94
+CONECT   94   95
+CONECT   95   96
+CONECT   96   97
+CONECT   97   98
+CONECT   98   99
+CONECT   99  100
+CONECT  100  101
+CONECT  101  102
+CONECT  102  103
+CONECT  103  104
+CONECT  104  105
+CONECT  105  106
+CONECT  106  107
+CONECT  107  108
+CONECT  108  109
+CONECT  109  110
+CONECT  110  111
+CONECT  111  112
+CONECT  112  113
+CONECT  113  114
+CONECT  114  115
+CONECT  115  116
+CONECT  116  117
+CONECT  117  118
+CONECT  118  119
+CONECT  119  120
+CONECT  120  121
+CONECT  121  122
+CONECT  122  123
+CONECT  123  124
+CONECT  124  125
+CONECT  125  126
+CONECT  126  127
+CONECT  127  128
+CONECT  128  129
+CONECT  129  130
+CONECT  130  131
+CONECT  131  132
+CONECT  132  133
+CONECT  133  134
+CONECT  134  135
+CONECT  135  136
+CONECT  136  137
+CONECT  137  138
+CONECT  138  139
+CONECT  139  140
+CONECT  140  141
+CONECT  141  142
+CONECT  142  143
+CONECT  143  144
+CONECT  144  145
+CONECT  145  146
+CONECT  146  147
+CONECT  147  148
+CONECT  148  149
+CONECT  149  150
+CONECT  150  151
+CONECT  151  152
+CONECT  152  153
+CONECT  153  154
+CONECT  154  155
+CONECT  155  156
+CONECT  156  157
+CONECT  157  158
+CONECT  158  159
+CONECT  159  160
+CONECT  160  161
+CONECT  161  162
+CONECT  162  163
+CONECT  163  164
+CONECT  164  165
+CONECT  165  166
+CONECT  166  167
+CONECT  167  168
+CONECT  168  169
+CONECT  169  170
+CONECT  170  171
+CONECT  171  172
+CONECT  172  173
+CONECT  173  174
+CONECT  174  175
+CONECT  175  176
+CONECT  176  177
+CONECT  177  178
+CONECT  178  179
+CONECT  179  180
+CONECT  180  181
+CONECT  181  182
+CONECT  182  183
+CONECT  183  184
+CONECT  184  185
+CONECT  185  186
+CONECT  186  187
+CONECT  187  188
+CONECT  188  189
+END
