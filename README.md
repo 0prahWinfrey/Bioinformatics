@@ -1,7 +1,7 @@
-#Moved
+# 3DFlies
+## Moved
 This project eventually merged with [ParticleChromo3D](https://github.com/OluwadareLab/ParticleChromo3D).  This was because ParticleChromo3D was significantly faster. 
 
-# 3DFlies
 ## Running Python
 This code is run by using  python3 threedflies.py <input_data> 
 
